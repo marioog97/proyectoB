@@ -1,1 +1,25 @@
-<p>componente1 works!</p>
+
+      <div class="row col-10" style="background-color: rgb(255, 194, 194);">
+
+        <p><b>Componente1</b></p>
+
+        <div>
+          <button type="button" (click)="btnIntercambiar()" class="btn btn-primary btn-blok">INTERCAMBIAR</button>
+        </div>
+
+        <div class="col-2" style="background-color: rgb(164, 225, 250);">
+          <app-componente4></app-componente4>
+        </div>
+
+
+        <div class="col-10">
+          <div class="row" style="background-color: rgba(255, 250, 183, 0.671);">
+            <app-componente2 [curso1]="curso1" [contador]="contador"></app-componente2>
+          </div>
+
+          <div class="row" style="background-color: rgba(96, 255, 117, 0.281);">
+            <app-componente3 [curso2]="curso2" [contador]="contador"></app-componente3>
+          </div>
+        </div>
+
+      </div>
